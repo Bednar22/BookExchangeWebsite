@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookExchange.API.Data;
 using BookExchange.API.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace BookExchange.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class BookController : ControllerBase
@@ -27,6 +29,7 @@ namespace BookExchange.API.Controllers
             return Ok(books);
         }
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBook(int id)
         {
