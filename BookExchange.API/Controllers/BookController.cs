@@ -20,8 +20,10 @@ namespace BookExchange.API.Controllers
         public BookController(DataContext context)
         {
             _context = context;
+
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetBooks()
         {
