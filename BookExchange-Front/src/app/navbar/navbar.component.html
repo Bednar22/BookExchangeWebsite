@@ -19,7 +19,13 @@
         >
       </li>
       <li *ngIf="loggedIn()" class="nav-item">
-        <a *ngIf="loggedIn()" class="nav-link" href="#">Books</a>
+        <a
+          *ngIf="loggedIn()"
+          class="nav-link"
+          routerLink="/booksearch"
+          routerLinkActive="active"
+          >Books</a
+        >
       </li>
       <li class="nav-item">
         <a *ngIf="loggedIn()" class="nav-link" href="#" (click)="logout()"
@@ -71,3 +77,4 @@
     </form>
   </div>
 </nav>
+<router-outlet></router-outlet>
