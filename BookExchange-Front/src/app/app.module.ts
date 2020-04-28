@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { AlertifyService } from './_services/alertify.service';
 import { SearchService } from './_services/search.service';
 import { BooksearchComponent } from './booksearch/booksearch.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { BooksearchComponent } from './booksearch/booksearch.component';
     HomeComponent,
     RegisterComponent,
     BooksearchComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
