@@ -27,17 +27,28 @@ namespace BookExchange.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBooks()
         {
-            var books = await _context.Books.ToListAsync();
+            var books = from b in _context.Books
+                        where b.Title.StartsWith("Pies")
+                        select b;
             return Ok(books);
         }
 
         [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetBook(int id)
+        public ActionResult<Book> GetBook(int id)
         {
-            var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
-            return Ok(book);
+            var book = _context.Books.FirstOrDefault(x => x.Id == id);
+            return book;
         }
+
+
+        // [AllowAnonymous]
+        // [HttpGet("{id}")]
+        // public async Task<IActionResult> GetBook(int id)
+        // {
+        //     var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
+        //     return Ok(book);
+        // }
 
         [HttpPost]
         public async Task<IActionResult> AddBook([FromBody] Book book)
