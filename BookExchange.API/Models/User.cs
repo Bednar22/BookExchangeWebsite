@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace BookExchange.API.Models
 {
     public class User
@@ -6,5 +8,6 @@ namespace BookExchange.API.Models
         public string Username { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+
     }
 }

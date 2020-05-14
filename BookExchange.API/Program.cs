@@ -50,16 +50,6 @@ namespace BookExchange.API
             })
             .UseSerilog();
 
-
-
-            // .ConfigureLogging((context, logging) =>
-            // {
-            //     logging.ClearProviders();
-            //     logging.AddConfiguration(context.Configuration.GetSection("Logging"));
-            //     logging.AddDebug();
-            //     logging.AddConsole();
-            // });
-
         }
     }
 

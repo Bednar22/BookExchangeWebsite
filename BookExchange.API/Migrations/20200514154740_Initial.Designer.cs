@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookExchange.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200421125434_AddedUser")]
-    partial class AddedUser
+    [Migration("20200514154740_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,6 +59,29 @@ namespace BookExchange.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BookExchange.API.Models.UsersBooks", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("WantEchange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("WantGet")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UsersBooks");
                 });
 #pragma warning restore 612, 618
         }

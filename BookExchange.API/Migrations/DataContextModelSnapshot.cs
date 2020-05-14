@@ -25,9 +25,6 @@ namespace BookExchange.API.Migrations
                     b.Property<string>("Author")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Owner")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
@@ -60,6 +57,29 @@ namespace BookExchange.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BookExchange.API.Models.UsersBooks", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("WantEchange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("WantGet")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UsersBooks");
                 });
 #pragma warning restore 612, 618
         }

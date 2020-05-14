@@ -14,6 +14,7 @@ using BookExchange.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 
 namespace BookExchange.API
 {
@@ -56,7 +57,7 @@ namespace BookExchange.API
 
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseAuthentication();
-
+            app.UseSerilogRequestLogging();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

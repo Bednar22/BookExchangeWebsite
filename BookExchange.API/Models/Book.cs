@@ -7,6 +7,6 @@ namespace BookExchange.API.Models
         public string Author { get; set; }
         public int WantEchangeAmmount { get; set; }
         public int WantGetAmmount { get; set; }
-        public int Owner { get; set; }
+
     }
 }

@@ -24,11 +24,11 @@ namespace BookExchange.API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet]
-        public async Task<IActionResult> GetBooks()
+        [HttpGet("userbooks/{userid}")]
+        public ActionResult<IEnumerable<Book>> GetBooks(string title)
         {
             var books = from b in _context.Books
-                        where b.Title.StartsWith("Pies")
+                        where b.Title.Equals(title)
                         select b;
             return Ok(books);
         }
@@ -49,7 +49,7 @@ namespace BookExchange.API.Controllers
         //     var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
         //     return Ok(book);
         // }
-
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> AddBook([FromBody] Book book)
         {
