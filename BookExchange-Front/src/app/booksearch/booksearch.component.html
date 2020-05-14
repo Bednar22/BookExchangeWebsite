@@ -26,7 +26,7 @@
           [formControl]="queryField"
           type="search"
           id="keyword"
-          placeholder="search for artists..."
+          placeholder="search for books..."
           typeahead-wait-ms="delay"
           autocomplete="off"
         />
@@ -50,9 +50,9 @@
             </div>
             <div class="details">
               <span>Title: {{ product.volumeInfo.title }}</span> <br />
-              <br />
-              <a [routerLink]="['/new', combineSlug(product.id)]">Details</a>
-              <a (click)="goToLink(product.volumeInfo.previewLink)">preview</a>
+              <a (click)="goToLink(product.volumeInfo.previewLink)"
+                >More info</a
+              >
             </div>
           </div>
         </div>

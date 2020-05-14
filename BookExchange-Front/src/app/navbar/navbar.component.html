@@ -27,6 +27,17 @@
           >Books</a
         >
       </li>
+
+      <li *ngIf="loggedIn()" class="nav-item">
+        <a
+          *ngIf="loggedIn()"
+          class="nav-link"
+          routerLink="/bookexchange"
+          routerLinkActive="active"
+          >Trade</a
+        >
+      </li>
+
       <li class="nav-item">
         <a *ngIf="loggedIn()" class="nav-link" href="#" (click)="logout()"
           >Logout</a

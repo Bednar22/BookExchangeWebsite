@@ -14,6 +14,7 @@ import { AlertifyService } from './_services/alertify.service';
 import { SearchService } from './_services/search.service';
 import { BooksearchComponent } from './booksearch/booksearch.component';
 import { FooterComponent } from './footer/footer.component';
+import { BookexchangeComponent } from './bookexchange/bookexchange.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     BooksearchComponent,
     FooterComponent,
+    BookexchangeComponent,
   ],
   imports: [
     BrowserModule,
