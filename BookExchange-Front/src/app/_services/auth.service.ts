@@ -15,7 +15,7 @@ export class AuthService {
     Using login method from API
     Return from login(API) is token and it's saved on localStorage
   */
-  login(model: any) {
+    login(model: any) {
     return this.http.post(this.baseUrl + 'login', model).pipe(
       map((response: any) => {
         const user = response;

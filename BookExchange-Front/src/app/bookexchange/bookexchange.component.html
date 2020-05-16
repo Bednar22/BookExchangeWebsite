@@ -1,16 +1,22 @@
-<form>
+<form [formGroup]="bookexchangeForm" (ngSubmit)="addExchange()">
   <div class="form-group col-lg-6 col-md-12 col-sm-12">
     <label for="exampleFormControlInput1">Book Title</label>
-    <input type="text" class="form-control" />
+    <input
+      type="text"
+      class="form-control"
+      name="bookTitle"
+      required
+      formControlName="bookTitle"
+    />
   </div>
 
   <div class="form-check form-check-inline">
     <input
       class="form-check-input"
       type="radio"
-      name="inlineRadioOptions"
+      formControlName="wantGet"
       id="inlineRadio1"
-      value="wanttoget"
+      (click)="changeStateGet()"
     />
     <label class="form-check-label" for="inlineRadio1">Want to get</label>
   </div>
@@ -18,9 +24,9 @@
     <input
       class="form-check-input"
       type="radio"
-      name="inlineRadioOptions"
-      id="inlineRadio2"
-      value="wanttoexchange"
+      id="inlineRadio1"
+      (click)="changeStateExchange()"
+      formControlName="wantExchange"
     />
     <label class="form-check-label" for="inlineRadio2">Want to exchange</label>
   </div>

@@ -8,9 +8,9 @@ import { map } from 'rxjs/operators';
 })
 export class SearchService {
   key = 'AIzaSyCUUzAaqQF7GOO7btRPZLt0-aMqCjkYTZU';
-  constructor(private httpClient: HttpClient) {}
+  constructor(private http: HttpClient) {}
   get(queryField: string) {
-    return this.httpClient.get(
+    return this.http.get(
       `https://www.googleapis.com/books/v1/volumes?q=${queryField}&maxResults=12&keyes&key=${this.key}`
     );
   }
