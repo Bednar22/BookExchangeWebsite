@@ -24,7 +24,7 @@
           class="nav-link"
           routerLink="/booksearch"
           routerLinkActive="active"
-          >Books</a
+          >Search</a
         >
       </li>
 
@@ -34,13 +34,7 @@
           class="nav-link"
           routerLink="/bookexchange"
           routerLinkActive="active"
-          >Trade</a
-        >
-      </li>
-
-      <li class="nav-item">
-        <a *ngIf="loggedIn()" class="nav-link" href="#" (click)="logout()"
-          >Logout</a
+          >AddNewExchange</a
         >
       </li>
     </ul>
@@ -55,10 +49,12 @@
         <a class="dropdown-item" href="#">Logout</a>
       </div>
     </div>
-
+    <div *ngIf="loggedIn()" class="nav-item">
+      <a class="nav-link" href="#" (click)="logout()">Logout</a>
+    </div>
     <form
       *ngIf="!loggedIn()"
-      #loginForm="ngForm"
+      [formGroup]="loginForm"
       class="form-inline mt-2 mt-md-0"
       (ngSubmit)="login()"
     >
@@ -66,7 +62,7 @@
         class="form-control mr-sm-2"
         type="text"
         placeholder="User"
-        [(ngModel)]="model.username"
+        formControlName="username"
         name="username"
         required
       />
@@ -74,7 +70,7 @@
         class="form-control mr-sm-2"
         type="password"
         placeholder="Password"
-        [(ngModel)]="model.password"
+        formControlName="password"
         name="password"
         required
       />

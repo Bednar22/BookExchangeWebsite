@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
-import { HttpClient } from '@angular/common/http';
 import { BookexchangeService } from '../_services/bookexchange.service';
 import { AlertifyService } from '../_services/alertify.service';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+
 @Component({
   selector: 'app-bookexchange',
   templateUrl: './bookexchange.component.html',
   styleUrls: ['./bookexchange.component.css'],
 })
 export class BookexchangeComponent implements OnInit {
-  baseUrl = 'http://localhost:5000/api/usersbooks';
-
   bookexchangeForm: any;
 
   constructor(

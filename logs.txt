@@ -822,3 +822,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/18/2020 13:43:42 Aplication starting
+05/18/2020 13:44:56 HTTP "POST" "/api/auth/register" responded 201 in 2224.0546 ms
+05/18/2020 13:51:43 HTTP "POST" "/api/auth/login" responded 401 in 253.5822 ms
+05/18/2020 13:51:52 HTTP "POST" "/api/auth/login" responded 200 in 308.7404 ms

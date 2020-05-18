@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
 import { Router } from '@angular/router';
+import { FormControl, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -10,17 +11,26 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   model: any = {};
+  loginForm: any;
   public href: string = '';
 
   constructor(
     public authService: AuthService,
     private alertify: AlertifyService,
-    private router: Router
-  ) {}
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) {
+    this.loginForm = this.formBuilder.group({
+      username: new FormControl(),
+      password: new FormControl(),
+    });
+  }
 
   ngOnInit() {}
 
   login() {
+    this.model.username = this.loginForm.value.username;
+    this.model.password = this.loginForm.value.password;
     this.authService.login(this.model).subscribe(
       (next) => {
         this.alertify.success('Logged in to application');
@@ -29,6 +39,7 @@ export class NavbarComponent implements OnInit {
         this.alertify.error('Logging problem');
       }
     );
+    this.loginForm.reset();
   }
 
   loggedIn() {
