@@ -50,11 +50,12 @@ namespace BookExchange.API.Controllers
         //     return Ok(book);
         // }
         [AllowAnonymous]
+
         [HttpPost]
         public async Task<IActionResult> AddBook([FromBody] Book book)
         {
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
+            await _context.Books.AddAsync(book);
+
             return Ok(book);
         }
 
