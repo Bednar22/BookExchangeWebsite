@@ -2420,3 +2420,11 @@ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime bi
 05/19/2020 14:10:33 HTTP "GET" "/api/usersbooks" responded 200 in 2208.3882 ms
 05/19/2020 14:10:38 HTTP "GET" "/api/usersbooks" responded 200 in 1693.6321 ms
 05/19/2020 14:15:42 HTTP "GET" "/api/usersbooks" responded 200 in 2178.5246 ms
+05/19/2020 14:25:50 HTTP "GET" "/api/usersbooks" responded 200 in 1230.8820 ms
+05/19/2020 14:28:35 HTTP "GET" "/api/usersbooks" responded 200 in 1086.4170 ms
+05/19/2020 14:32:04 HTTP "GET" "/api/usersbooks" responded 200 in 1141.0959 ms
+05/19/2020 14:34:51 HTTP "GET" "/api/usersbooks" responded 200 in 1309.8625 ms
+05/19/2020 14:35:04 HTTP "POST" "/api/auth/login" responded 200 in 168.1223 ms
+05/19/2020 14:37:49 HTTP "GET" "/api/usersbooks" responded 200 in 1035.4019 ms
+05/19/2020 14:38:28 HTTP "GET" "/api/usersbooks" responded 200 in 1533.1764 ms
+05/19/2020 14:39:03 HTTP "GET" "/api/usersbooks" responded 200 in 1644.7199 ms

@@ -32,17 +32,20 @@ namespace BookExchange.API.Controllers
 
             foreach (var line in _context.UsersBooks)
             {
-                var book = _context.Books.FirstOrDefault(x => x.Id == line.BookId);
-                var user = _context.Users.FirstOrDefault(x => x.Id == line.UserId);
-                BookPlusUserInfoDTO exchangeToList = new BookPlusUserInfoDTO
+                if (line.WantEchange == true)
                 {
-                    BookTitle = book.Title,
-                    Author = book.Author,
-                    WantExchange = line.WantEchange,
-                    Username = user.Username,
-                    Thumbnail = GetThumbnail(book.Title)
-                };
-                bookPlusUserInfoList.Add(exchangeToList);
+                    var book = _context.Books.FirstOrDefault(x => x.Id == line.BookId);
+                    var user = _context.Users.FirstOrDefault(x => x.Id == line.UserId);
+                    BookPlusUserInfoDTO exchangeToList = new BookPlusUserInfoDTO
+                    {
+                        BookTitle = book.Title,
+                        Author = book.Author,
+                        WantExchange = line.WantEchange,
+                        Username = user.Username,
+                        Thumbnail = GetThumbnail(book.Title)
+                    };
+                    bookPlusUserInfoList.Add(exchangeToList);
+                }
             }
 
             return bookPlusUserInfoList;
@@ -117,7 +120,6 @@ namespace BookExchange.API.Controllers
             dynamic convertedResult = JsonConvert.DeserializeObject(result);
             if (title != convertedResult.items[0].volumeInfo.title.ToString()) { return null; }
             thumbnail = convertedResult.items[0].volumeInfo.imageLinks.thumbnail;
-            Console.Write(thumbnail);
             return thumbnail;
         }
     } //end of class
