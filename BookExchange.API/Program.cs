@@ -35,10 +35,7 @@ namespace BookExchange.API
             }
 
             CreateHostBuilder(args).Build().Run();
-            // var host = CreateHostBuilder(args).Build();
-            // var logger = host.Services.GetRequiredService<ILogger<Program>>();
-            // logger.LogInformation("Application started MYLOG");
-            // host.Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args)

@@ -24,16 +24,6 @@ namespace BookExchange.API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("userbooks/{userid}")]
-        public ActionResult<IEnumerable<Book>> GetBooks(string title)
-        {
-            var books = from b in _context.Books
-                        where b.Title.Equals(title)
-                        select b;
-            return Ok(books);
-        }
-
-        [AllowAnonymous]
         [HttpGet("{id}")]
         public ActionResult<Book> GetBook(int id)
         {

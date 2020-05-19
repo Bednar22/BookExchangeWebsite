@@ -101,7 +101,7 @@ namespace BookExchange.API.Controllers
             return Ok(usersbooksToCreate);
         }
 
-        string GetAuthor(string title)
+        public string GetAuthor(string title)
         {
             string author = null;
             WebClient webClient = new WebClient();
@@ -112,7 +112,7 @@ namespace BookExchange.API.Controllers
             return author;
         }
 
-        string GetThumbnail(string title)
+        public string GetThumbnail(string title)
         {
             string thumbnail = null;
             WebClient webClient = new WebClient();
@@ -121,6 +121,16 @@ namespace BookExchange.API.Controllers
             if (title != convertedResult.items[0].volumeInfo.title.ToString()) { return null; }
             thumbnail = convertedResult.items[0].volumeInfo.imageLinks.thumbnail;
             return thumbnail;
+        }
+
+
+        [HttpGet("{userid}")]
+        public ActionResult<IEnumerable<Book>> GetBooks(int id)
+        {
+            var books = from b in _context.UsersBooks
+                        where b.Id.Equals(id)
+                        select b;
+            return Ok(books);
         }
     } //end of class
 }

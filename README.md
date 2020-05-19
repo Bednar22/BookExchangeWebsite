@@ -13,6 +13,7 @@ Aplikacja została stworzona w ramach kursu .NET i Java jako pierwszy miniprojek
 - **Komunikacja z zewnętrznym API** - komunikacja z Google Books API
 - **Serilog** - tworzenie własnych logów
 - **Asynrchorniczność** - asynchroniczne HTTP Request'y
+- **xUnit** - podstawowe testy jednostkowe z wykorzystyaniem xunit
 
 ## Autor
 

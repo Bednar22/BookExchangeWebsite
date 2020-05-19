@@ -2428,3 +2428,18 @@ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime bi
 05/19/2020 14:37:49 HTTP "GET" "/api/usersbooks" responded 200 in 1035.4019 ms
 05/19/2020 14:38:28 HTTP "GET" "/api/usersbooks" responded 200 in 1533.1764 ms
 05/19/2020 14:39:03 HTTP "GET" "/api/usersbooks" responded 200 in 1644.7199 ms
+05/19/2020 14:39:32 Aplication starting
+05/19/2020 14:39:42 HTTP "GET" "/api/usersbooks" responded 200 in 1471.5407 ms
+05/19/2020 14:41:37 HTTP "GET" "/api/usersbooks" responded 200 in 593.2002 ms
+05/19/2020 14:41:44 HTTP "GET" "/api/usersbooks" responded 200 in 492.1211 ms
+05/19/2020 14:41:55 HTTP "GET" "/api/usersbooks" responded 200 in 553.3110 ms
+05/19/2020 14:41:58 HTTP "GET" "/api/usersbooks" responded 200 in 498.1181 ms
+05/19/2020 14:42:15 HTTP "GET" "/api/usersbooks" responded 200 in 647.2112 ms
+05/19/2020 14:44:14 HTTP "POST" "/api/usersbooks" responded 200 in 747.8726 ms
+05/19/2020 14:44:18 HTTP "GET" "/api/usersbooks" responded 200 in 1022.3064 ms
+05/19/2020 14:44:30 HTTP "GET" "/api/usersbooks" responded 200 in 997.0876 ms
+05/19/2020 14:44:33 HTTP "GET" "/api/usersbooks" responded 200 in 1008.1680 ms
+05/19/2020 14:44:44 HTTP "POST" "/api/usersbooks" responded 200 in 21.3580 ms
+05/19/2020 14:44:47 HTTP "GET" "/api/usersbooks" responded 200 in 1011.4627 ms
+05/19/2020 14:46:15 HTTP "POST" "/api/auth/login" responded 200 in 95.6809 ms
+05/19/2020 14:47:23 HTTP "GET" "/api/usersbooks" responded 200 in 1148.8718 ms
