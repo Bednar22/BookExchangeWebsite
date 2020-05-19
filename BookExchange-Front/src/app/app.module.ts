@@ -15,6 +15,7 @@ import { SearchService } from './_services/search.service';
 import { BooksearchComponent } from './booksearch/booksearch.component';
 import { FooterComponent } from './footer/footer.component';
 import { BookexchangeComponent } from './bookexchange/bookexchange.component';
+import { ExchangeslistComponent } from './exchangeslist/exchangeslist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { BookexchangeComponent } from './bookexchange/bookexchange.component';
     BooksearchComponent,
     FooterComponent,
     BookexchangeComponent,
+    ExchangeslistComponent,
   ],
   imports: [
     BrowserModule,

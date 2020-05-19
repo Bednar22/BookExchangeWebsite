@@ -2092,3 +2092,331 @@ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Operator '!=' cannot be a
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/18/2020 23:20:07 Aplication starting
+05/18/2020 23:20:19 HTTP "POST" "/api/usersbooks" responded 400 in 1816.4759 ms
+05/18/2020 23:20:59 HTTP "POST" "/api/usersbooks" responded 200 in 203.1866 ms
+05/18/2020 23:21:08 HTTP "POST" "/api/usersbooks" responded 400 in 537.3194 ms
+05/18/2020 23:25:05 HTTP "POST" "/api/usersbooks" responded 200 in 686.6968 ms
+05/18/2020 23:50:16 Aplication starting
+05/18/2020 23:50:16 User profile is available. Using '"C:\Users\mBedn\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/18/2020 23:50:16 Now listening on: "http://localhost:5000"
+05/18/2020 23:50:16 Application started. Press Ctrl+C to shut down.
+05/18/2020 23:50:16 Hosting environment: "Development"
+05/18/2020 23:50:16 Content root path: "C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API"
+05/18/2020 23:50:39 Application is shutting down...
+05/18/2020 23:53:05 Aplication starting
+05/18/2020 23:53:05 User profile is available. Using '"C:\Users\mBedn\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/18/2020 23:53:05 Now listening on: "http://localhost:5000"
+05/18/2020 23:53:05 Application started. Press Ctrl+C to shut down.
+05/18/2020 23:53:05 Hosting environment: "Development"
+05/18/2020 23:53:05 Content root path: "C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API"
+05/18/2020 23:53:28 Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login  
+05/18/2020 23:53:28 CORS policy execution successful.
+05/18/2020 23:53:28 Request finished in 16.8755ms 204 
+05/18/2020 23:53:28 Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login application/json 42
+05/18/2020 23:53:28 CORS policy execution successful.
+05/18/2020 23:53:28 Executing endpoint '"BookExchange.API.Controllers.AuthController.Login (BookExchange.API)"'
+05/18/2020 23:53:28 Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BookExchange.API.DTOs.UserForLoginDTO)" on controller "BookExchange.API.Controllers.AuthController" ("BookExchange.API").
+05/18/2020 23:53:29 Entity Framework Core "3.1.3" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite"' with options: "None"
+05/18/2020 23:53:29 Executed DbCommand ("11"ms) [Parameters=["@__username_0='?' (Size = 5)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"u\".\"Id\", \"u\".\"PasswordHash\", \"u\".\"PasswordSalt\", \"u\".\"Username\"
+FROM \"Users\" AS \"u\"
+WHERE \"u\".\"Username\" = @__username_0
+LIMIT 1"
+05/18/2020 23:53:29 Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+05/18/2020 23:53:29 Executed action "BookExchange.API.Controllers.AuthController.Login (BookExchange.API)" in 705.9224ms
+05/18/2020 23:53:29 Executed endpoint '"BookExchange.API.Controllers.AuthController.Login (BookExchange.API)"'
+05/18/2020 23:53:29 HTTP "POST" "/api/auth/login" responded 200 in 762.3811 ms
+05/18/2020 23:53:29 Request finished in 790.023ms 200 application/json; charset=utf-8
+05/18/2020 23:56:43 Application is shutting down...
+05/19/2020 00:15:56 Aplication starting
+05/19/2020 00:16:10 HTTP "POST" "/api/auth/login" responded 200 in 599.2363 ms
+05/19/2020 00:16:43 Aplication starting
+05/19/2020 00:17:01 HTTP "POST" "/api/auth/login" responded 200 in 596.2942 ms
+05/19/2020 00:19:06 Aplication starting
+05/19/2020 00:19:51 Userhahaha
+05/19/2020 00:19:51 HTTP "POST" "/api/auth/login" responded 200 in 605.4689 ms
+05/19/2020 00:24:07 Aplication starting
+05/19/2020 00:24:20 No author to tittle
+05/19/2020 00:24:20 HTTP "POST" "/api/usersbooks" responded 400 in 1285.4530 ms
+05/19/2020 12:18:40 Aplication starting
+05/19/2020 12:19:14 HTTP "GET" "/api/usersbooks" responded 200 in 1280.2375 ms
+05/19/2020 12:19:25 HTTP "GET" "/api/usersbooks" responded 200 in 51.4508 ms
+05/19/2020 12:19:35 HTTP "GET" "/api/usersbooks" responded 200 in 23.7534 ms
+05/19/2020 12:19:40 HTTP "GET" "/api/usersbooks" responded 200 in 12.6464 ms
+05/19/2020 12:21:31 HTTP "GET" "/api/usersbooks" responded 200 in 12.0400 ms
+05/19/2020 12:22:54 HTTP "GET" "/api/usersbooks" responded 200 in 14.5891 ms
+05/19/2020 12:23:19 HTTP "GET" "/api/usersbooks" responded 200 in 16.4878 ms
+05/19/2020 12:23:29 HTTP "POST" "/api/auth/login" responded 200 in 308.0996 ms
+05/19/2020 12:23:35 HTTP "GET" "/api/usersbooks" responded 200 in 9.9560 ms
+05/19/2020 12:24:15 HTTP "POST" "/api/usersbooks" responded 200 in 246.2570 ms
+05/19/2020 12:24:28 HTTP "GET" "/api/usersbooks" responded 200 in 9.8250 ms
+05/19/2020 12:26:32 HTTP "GET" "/api/usersbooks" responded 200 in 9.0304 ms
+05/19/2020 12:26:37 HTTP "GET" "/api/usersbooks" responded 200 in 11.2188 ms
+05/19/2020 12:27:05 HTTP "GET" "/api/usersbooks" responded 200 in 9.3543 ms
+05/19/2020 12:27:26 HTTP "GET" "/api/usersbooks" responded 200 in 10.0689 ms
+05/19/2020 12:27:33 HTTP "GET" "/api/usersbooks" responded 200 in 21.5604 ms
+05/19/2020 12:27:36 HTTP "GET" "/api/usersbooks" responded 200 in 10.0331 ms
+05/19/2020 12:29:07 HTTP "GET" "/api/usersbooks" responded 200 in 10.5021 ms
+05/19/2020 13:08:31 HTTP "GET" "/api/usersbooks" responded 200 in 14.5444 ms
+05/19/2020 13:08:44 Aplication starting
+05/19/2020 13:08:54 HTTP "GET" "/api/usersbooks" responded 200 in 1967.6235 ms
+05/19/2020 13:09:25 HTTP "GET" "/api/usersbooks" responded 200 in 1025.1846 ms
+05/19/2020 13:09:33 HTTP "GET" "/api/usersbooks" responded 200 in 1190.3234 ms
+05/19/2020 13:09:40 HTTP "GET" "/api/usersbooks" responded 200 in 922.2947 ms
+05/19/2020 13:09:45 HTTP "GET" "/api/usersbooks" responded 200 in 1023.9936 ms
+05/19/2020 13:09:56 HTTP "GET" "/api/usersbooks" responded 200 in 1783.1269 ms
+05/19/2020 13:10:22 HTTP "POST" "/api/usersbooks" responded 200 in 1771.1193 ms
+05/19/2020 13:10:27 HTTP "GET" "/api/usersbooks" responded 500 in 2481.8724 ms
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+05/19/2020 13:10:27 An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/19/2020 13:10:36 HTTP "GET" "/api/usersbooks" responded 500 in 2373.1754 ms
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+05/19/2020 13:10:36 An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/19/2020 13:11:02 HTTP "GET" "/api/usersbooks" responded 500 in 1208.1448 ms
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+05/19/2020 13:11:02 An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at BookExchange.API.Controllers.UsersbooksController.GetThumbnail(String title) in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 119
+   at BookExchange.API.Controllers.UsersbooksController.GetExchanges() in C:\Users\mBedn\DotNetAndJava\BookExchaange\BookExchange.API\Controllers\UsersbooksController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/19/2020 13:14:53 Aplication starting
+05/19/2020 13:15:20 HTTP "GET" "/api/usersbooks" responded 200 in 2937.4578 ms
+05/19/2020 13:17:00 Aplication starting
+05/19/2020 13:18:19 HTTP "GET" "/api/usersbooks" responded 200 in 2927.8788 ms
+05/19/2020 13:19:23 HTTP "GET" "/api/usersbooks" responded 200 in 2162.6888 ms
+05/19/2020 13:20:29 HTTP "GET" "/api/usersbooks" responded 200 in 2534.3908 ms
+05/19/2020 13:20:34 HTTP "GET" "/api/usersbooks" responded 200 in 1438.3466 ms
+05/19/2020 13:20:38 HTTP "GET" "/api/usersbooks" responded 200 in 2571.9961 ms
+05/19/2020 13:20:41 HTTP "GET" "/api/usersbooks" responded 200 in 1928.1919 ms
+05/19/2020 13:21:19 HTTP "POST" "/api/usersbooks" responded 200 in 818.4714 ms
+05/19/2020 13:21:24 HTTP "GET" "/api/usersbooks" responded 200 in 2903.6637 ms
+05/19/2020 13:23:57 HTTP "GET" "/api/usersbooks" responded 200 in 5490.9298 ms
+05/19/2020 13:25:45 HTTP "GET" "/api/usersbooks" responded 200 in 1803.8926 ms
+05/19/2020 13:25:48 HTTP "GET" "/api/usersbooks" responded 200 in 1673.1694 ms
+05/19/2020 13:26:21 HTTP "GET" "/api/usersbooks" responded 200 in 1795.9224 ms
+05/19/2020 13:26:40 HTTP "GET" "/api/usersbooks" responded 200 in 1569.9366 ms
+05/19/2020 13:27:39 HTTP "GET" "/api/usersbooks" responded 200 in 2473.4222 ms
+05/19/2020 13:27:45 HTTP "GET" "/api/usersbooks" responded 200 in 2941.0339 ms
+05/19/2020 13:27:58 HTTP "GET" "/api/usersbooks" responded 200 in 1813.3763 ms
+05/19/2020 13:28:29 HTTP "GET" "/api/usersbooks" responded 200 in 2310.4847 ms
+05/19/2020 13:28:33 HTTP "GET" "/api/usersbooks" responded 200 in 2308.5487 ms
+05/19/2020 13:28:36 HTTP "GET" "/api/usersbooks" responded 200 in 2425.6142 ms
+05/19/2020 13:28:48 HTTP "GET" "/api/usersbooks" responded 200 in 1682.9121 ms
+05/19/2020 13:29:03 HTTP "GET" "/api/usersbooks" responded 200 in 2245.1859 ms
+05/19/2020 13:30:29 HTTP "GET" "/api/usersbooks" responded 200 in 3355.8489 ms
+05/19/2020 13:30:33 HTTP "GET" "/api/usersbooks" responded 200 in 3128.3524 ms
+05/19/2020 13:30:46 HTTP "GET" "/api/usersbooks" responded 200 in 1705.4800 ms
+05/19/2020 13:30:50 HTTP "GET" "/api/usersbooks" responded 200 in 1708.8897 ms
+05/19/2020 13:30:54 HTTP "GET" "/api/usersbooks" responded 200 in 2142.8660 ms
+05/19/2020 13:31:06 HTTP "GET" "/api/usersbooks" responded 200 in 1710.8989 ms
+05/19/2020 13:31:08 HTTP "GET" "/api/usersbooks" responded 200 in 1658.2572 ms
+05/19/2020 13:31:12 HTTP "GET" "/api/usersbooks" responded 200 in 1767.4833 ms
+05/19/2020 13:31:22 HTTP "GET" "/api/usersbooks" responded 200 in 2071.2549 ms
+05/19/2020 13:32:16 HTTP "GET" "/api/usersbooks" responded 200 in 1735.7155 ms
+05/19/2020 13:32:25 HTTP "GET" "/api/usersbooks" responded 200 in 1794.1724 ms
+05/19/2020 13:32:29 HTTP "GET" "/api/usersbooks" responded 200 in 2923.9279 ms
+05/19/2020 13:32:35 HTTP "GET" "/api/usersbooks" responded 200 in 2188.0373 ms
+05/19/2020 13:32:50 HTTP "GET" "/api/usersbooks" responded 200 in 1713.7706 ms
+05/19/2020 13:33:24 HTTP "GET" "/api/usersbooks" responded 200 in 3725.4937 ms
+05/19/2020 13:33:26 HTTP "GET" "/api/usersbooks" responded 200 in 1615.0962 ms
+05/19/2020 13:33:34 HTTP "GET" "/api/usersbooks" responded 200 in 1664.3368 ms
+05/19/2020 13:34:04 HTTP "GET" "/api/usersbooks" responded 200 in 2225.8661 ms
+05/19/2020 13:34:22 HTTP "GET" "/api/usersbooks" responded 200 in 4909.4589 ms
+05/19/2020 13:34:28 HTTP "GET" "/api/usersbooks" responded 200 in 1739.0866 ms
+05/19/2020 13:34:31 HTTP "GET" "/api/usersbooks" responded 200 in 1658.8570 ms
+05/19/2020 13:34:43 HTTP "GET" "/api/usersbooks" responded 200 in 2101.9672 ms
+05/19/2020 13:35:01 HTTP "GET" "/api/usersbooks" responded 200 in 1631.2740 ms
+05/19/2020 13:35:08 HTTP "GET" "/api/usersbooks" responded 200 in 1993.9681 ms
+05/19/2020 13:35:41 HTTP "GET" "/api/usersbooks" responded 200 in 3252.2755 ms
+05/19/2020 13:35:45 HTTP "GET" "/api/usersbooks" responded 200 in 4096.9060 ms
+05/19/2020 13:36:36 HTTP "GET" "/api/usersbooks" responded 200 in 1800.0723 ms
+05/19/2020 13:36:39 HTTP "GET" "/api/usersbooks" responded 200 in 1615.6893 ms
+05/19/2020 13:36:50 HTTP "GET" "/api/usersbooks" responded 200 in 1862.7685 ms
+05/19/2020 13:36:53 HTTP "GET" "/api/usersbooks" responded 200 in 1701.5394 ms
+05/19/2020 13:37:06 HTTP "GET" "/api/usersbooks" responded 200 in 2744.0736 ms
+05/19/2020 13:37:49 HTTP "GET" "/api/usersbooks" responded 200 in 2560.8908 ms
+05/19/2020 13:38:44 HTTP "GET" "/api/usersbooks" responded 200 in 1650.0503 ms
+05/19/2020 13:39:29 HTTP "GET" "/api/usersbooks" responded 200 in 2440.1851 ms
+05/19/2020 13:39:44 HTTP "GET" "/api/usersbooks" responded 200 in 1918.1944 ms
+05/19/2020 13:39:44 HTTP "GET" "/api/usersbooks" responded 200 in 1961.8756 ms
+05/19/2020 13:39:56 HTTP "GET" "/api/usersbooks" responded 200 in 2630.1125 ms
+05/19/2020 13:40:23 HTTP "GET" "/api/usersbooks" responded 200 in 2613.7134 ms
+05/19/2020 13:40:44 HTTP "GET" "/api/usersbooks" responded 200 in 4459.4526 ms
+05/19/2020 13:40:44 HTTP "GET" "/api/usersbooks" responded 200 in 3508.8386 ms
+05/19/2020 13:41:02 HTTP "GET" "/api/usersbooks" responded 200 in 1711.3668 ms
+05/19/2020 13:42:56 HTTP "GET" "/api/usersbooks" responded 200 in 2647.6867 ms
+05/19/2020 13:43:16 HTTP "GET" "/api/usersbooks" responded 200 in 1944.5447 ms
+05/19/2020 13:43:32 HTTP "GET" "/api/usersbooks" responded 200 in 3297.9839 ms
+05/19/2020 13:43:36 HTTP "GET" "/api/usersbooks" responded 200 in 3287.2552 ms
+05/19/2020 13:43:58 HTTP "GET" "/api/usersbooks" responded 200 in 2923.3911 ms
+05/19/2020 13:45:01 HTTP "GET" "/api/usersbooks" responded 200 in 1768.7734 ms
+05/19/2020 13:45:36 HTTP "GET" "/api/usersbooks" responded 200 in 2142.1632 ms
+05/19/2020 13:45:46 HTTP "GET" "/api/usersbooks" responded 200 in 2524.1397 ms
+05/19/2020 13:45:50 HTTP "GET" "/api/usersbooks" responded 200 in 1702.6475 ms
+05/19/2020 13:46:00 HTTP "GET" "/api/usersbooks" responded 200 in 3073.7919 ms
+05/19/2020 13:46:10 HTTP "GET" "/api/usersbooks" responded 200 in 1836.4341 ms
+05/19/2020 13:46:33 HTTP "GET" "/api/usersbooks" responded 200 in 1846.6601 ms
+05/19/2020 13:46:41 HTTP "GET" "/api/usersbooks" responded 200 in 1743.1603 ms
+05/19/2020 13:46:43 HTTP "GET" "/api/usersbooks" responded 200 in 1798.2538 ms
+05/19/2020 13:46:49 HTTP "GET" "/api/usersbooks" responded 200 in 2714.4822 ms
+05/19/2020 13:46:53 HTTP "GET" "/api/usersbooks" responded 200 in 1696.7615 ms
+05/19/2020 13:46:56 HTTP "GET" "/api/usersbooks" responded 200 in 1712.2336 ms
+05/19/2020 13:47:17 HTTP "GET" "/api/usersbooks" responded 200 in 2042.4514 ms
+05/19/2020 13:47:19 HTTP "GET" "/api/usersbooks" responded 200 in 1621.4928 ms
+05/19/2020 13:47:29 HTTP "GET" "/api/usersbooks" responded 200 in 2572.0680 ms
+05/19/2020 13:47:32 HTTP "GET" "/api/usersbooks" responded 200 in 2008.5527 ms
+05/19/2020 13:47:33 HTTP "GET" "/api/usersbooks" responded 200 in 1698.0985 ms
+05/19/2020 13:47:37 HTTP "GET" "/api/usersbooks" responded 200 in 1623.2693 ms
+05/19/2020 13:47:48 HTTP "GET" "/api/usersbooks" responded 200 in 1659.2167 ms
+05/19/2020 13:48:29 HTTP "GET" "/api/usersbooks" responded 200 in 3705.6845 ms
+05/19/2020 13:48:33 HTTP "GET" "/api/usersbooks" responded 200 in 3320.9770 ms
+05/19/2020 13:48:35 HTTP "GET" "/api/usersbooks" responded 200 in 2577.3860 ms
+05/19/2020 13:48:38 HTTP "GET" "/api/usersbooks" responded 200 in 2333.6953 ms
+05/19/2020 13:48:42 HTTP "GET" "/api/usersbooks" responded 200 in 1808.4784 ms
+05/19/2020 13:49:02 HTTP "GET" "/api/usersbooks" responded 200 in 3010.4848 ms
+05/19/2020 13:49:05 HTTP "GET" "/api/usersbooks" responded 200 in 2868.7101 ms
+05/19/2020 13:49:09 HTTP "GET" "/api/usersbooks" responded 200 in 2658.3897 ms
+05/19/2020 13:49:16 HTTP "GET" "/api/usersbooks" responded 200 in 2330.5903 ms
+05/19/2020 13:49:43 HTTP "GET" "/api/usersbooks" responded 200 in 1895.3257 ms
+05/19/2020 13:49:45 HTTP "GET" "/api/usersbooks" responded 200 in 2007.7033 ms
+05/19/2020 13:49:47 HTTP "GET" "/api/usersbooks" responded 200 in 1901.7660 ms
+05/19/2020 13:49:50 HTTP "GET" "/api/usersbooks" responded 200 in 2295.5901 ms
+05/19/2020 13:49:56 HTTP "GET" "/api/usersbooks" responded 200 in 2047.0319 ms
+05/19/2020 13:50:33 HTTP "GET" "/api/usersbooks" responded 200 in 1594.3928 ms
+05/19/2020 13:50:57 HTTP "GET" "/api/usersbooks" responded 200 in 2323.4463 ms
+05/19/2020 13:53:06 HTTP "GET" "/api/usersbooks" responded 200 in 2384.0350 ms
+05/19/2020 13:53:46 HTTP "GET" "/api/usersbooks" responded 200 in 2161.5097 ms
+05/19/2020 13:56:25 HTTP "GET" "/api/usersbooks" responded 200 in 2163.7004 ms
+05/19/2020 13:56:41 HTTP "GET" "/api/usersbooks" responded 200 in 2660.2550 ms
+05/19/2020 13:57:27 HTTP "GET" "/api/usersbooks" responded 200 in 3951.5830 ms
+05/19/2020 13:57:34 HTTP "GET" "/api/usersbooks" responded 200 in 1714.4214 ms
+05/19/2020 14:00:20 HTTP "GET" "/api/usersbooks" responded 200 in 1896.9301 ms
+05/19/2020 14:01:49 HTTP "GET" "/api/usersbooks" responded 200 in 2312.3781 ms
+05/19/2020 14:02:03 HTTP "GET" "/api/usersbooks" responded 200 in 1795.1098 ms
+05/19/2020 14:02:38 HTTP "GET" "/api/usersbooks" responded 200 in 2127.6192 ms
+05/19/2020 14:04:00 HTTP "GET" "/api/usersbooks" responded 200 in 2290.7502 ms
+05/19/2020 14:10:33 HTTP "GET" "/api/usersbooks" responded 200 in 2208.3882 ms
+05/19/2020 14:10:38 HTTP "GET" "/api/usersbooks" responded 200 in 1693.6321 ms
+05/19/2020 14:15:42 HTTP "GET" "/api/usersbooks" responded 200 in 2178.5246 ms

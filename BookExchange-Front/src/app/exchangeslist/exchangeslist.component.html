@@ -1,0 +1,20 @@
+<div
+  class=".container bg-light border mx-2 my-2 p-2"
+  *ngFor="let exchange of exchangelist"
+>
+  <div class="image">
+    <img
+      *ngIf="exchange.thumbnail"
+      src="{{ exchange.thumbnail }}"
+      alt=""
+      style="float: left;"
+    />
+    <div style="float: left; margin-left: 30px;">
+      <p><b>Title:</b> {{ exchange.bookTitle }} -</p>
+      <p><b>Author:</b> {{ exchange.author }}</p>
+      <p><b>Username:</b> {{ exchange.username }}</p>
+      <button>Exchange</button>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+</div>

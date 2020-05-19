@@ -9,8 +9,8 @@ Aplikacja została stworzona w ramach kursu .NET i Java jako pierwszy miniprojek
 
 - **NuGet Package Manager** - zainstalowane pakiety można zobaczyć w pliku _BookExchange.API.csproj_
 - **EntityFramework** - odpowiada za komunikację z bazą danych
-- **LINQ** -
-- - **Komunikacja z zewnętrznym API** - komunikacja z Google Books API
+- **LINQ**
+- **Komunikacja z zewnętrznym API** - komunikacja z Google Books API
 - **Serilog** - tworzenie własnych logów
 - **Asynrchorniczność** - asynchroniczne HTTP Request'y
 

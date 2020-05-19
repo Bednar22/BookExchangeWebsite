@@ -37,6 +37,16 @@
           >AddNewExchange</a
         >
       </li>
+
+      <li *ngIf="loggedIn()" class="nav-item">
+        <a
+          *ngIf="loggedIn()"
+          class="nav-link"
+          routerLink="/exchanges"
+          routerLinkActive="active"
+          >List</a
+        >
+      </li>
     </ul>
 
     <div *ngIf="loggedIn()" class="dropdown">

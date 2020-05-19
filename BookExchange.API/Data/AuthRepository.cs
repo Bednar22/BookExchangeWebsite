@@ -3,11 +3,13 @@ using System.Text;
 using System.Threading.Tasks;
 using BookExchange.API.Models;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace BookExchange.API.Data
 {
     public class AuthRepository : IAuthRepository
     {
+
         #region  public methods
         private readonly DataContext _context;
         public AuthRepository(DataContext context)
@@ -17,11 +19,19 @@ namespace BookExchange.API.Data
         }
         public async Task<User> Login(string username, string password)
         {
+
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Username == username);
 
-            if (user == null) { return null; }
-            if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt)) { return null; }
+            if (user == null)
+            {
+                return null;
+            }
+            if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+            {
+                return null;
+            }
 
+            
             return user;
         }
         public async Task<User> Register(User user, string password)

@@ -8,10 +8,13 @@ import { catchError } from 'rxjs/operators';
 })
 export class BookexchangeService {
   baseUrl = 'http://localhost:5000/api/usersbooks';
+  exchanges: any;
   constructor(private http: HttpClient, public authService: AuthService) {}
 
   addExchange(model: any) {
     console.log(model);
     return this.http.post(this.baseUrl, model);
   }
+
+  
 }

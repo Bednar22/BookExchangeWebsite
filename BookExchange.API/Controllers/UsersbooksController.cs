@@ -4,13 +4,14 @@ using BookExchange.API.Models;
 using BookExchange.API.DTOs;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using System.Net;
-using System;
 using Newtonsoft.Json;
 using System.Json;
-
+using Serilog;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System;
 namespace BookExchange.API.Controllers
 {
     [ApiController]
@@ -22,6 +23,29 @@ namespace BookExchange.API.Controllers
         public UsersbooksController(DataContext context)
         {
             _context = context;
+        }
+
+        [HttpGet]
+        public List<BookPlusUserInfoDTO> GetExchanges()
+        {
+            List<BookPlusUserInfoDTO> bookPlusUserInfoList = new List<BookPlusUserInfoDTO>();
+
+            foreach (var line in _context.UsersBooks)
+            {
+                var book = _context.Books.FirstOrDefault(x => x.Id == line.BookId);
+                var user = _context.Users.FirstOrDefault(x => x.Id == line.UserId);
+                BookPlusUserInfoDTO exchangeToList = new BookPlusUserInfoDTO
+                {
+                    BookTitle = book.Title,
+                    Author = book.Author,
+                    WantExchange = line.WantEchange,
+                    Username = user.Username,
+                    Thumbnail = GetThumbnail(book.Title)
+                };
+                bookPlusUserInfoList.Add(exchangeToList);
+            }
+
+            return bookPlusUserInfoList;
         }
 
         [HttpPost]
@@ -36,7 +60,11 @@ namespace BookExchange.API.Controllers
                     WantEchangeAmmount = 0,
                     WantGetAmmount = 0
                 };
-                if (bookToCreate.Author == null) { return BadRequest("Book doesnt exist"); }
+                if (bookToCreate.Author == null)
+                {
+                    Log.Information("No Author was found for given bookTitle");
+                    return BadRequest("Book doesnt exist");
+                }
                 _context.Books.Add(bookToCreate);
                 _context.SaveChanges();
             }
@@ -79,6 +107,18 @@ namespace BookExchange.API.Controllers
             if (title != convertedResult.items[0].volumeInfo.title.ToString()) { return null; }
             author = convertedResult.items[0].volumeInfo.authors[0];
             return author;
+        }
+
+        string GetThumbnail(string title)
+        {
+            string thumbnail = null;
+            WebClient webClient = new WebClient();
+            dynamic result = JsonValue.Parse(webClient.DownloadString("https://www.googleapis.com/books/v1/volumes?q=" + title + "&maxResults=1&keyes&key=AIzaSyCUUzAaqQF7GOO7btRPZLt0-aMqCjkYTZU")).ToString();
+            dynamic convertedResult = JsonConvert.DeserializeObject(result);
+            if (title != convertedResult.items[0].volumeInfo.title.ToString()) { return null; }
+            thumbnail = convertedResult.items[0].volumeInfo.imageLinks.thumbnail;
+            Console.Write(thumbnail);
+            return thumbnail;
         }
     } //end of class
 }
